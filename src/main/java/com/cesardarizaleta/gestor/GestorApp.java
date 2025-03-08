@@ -16,7 +16,7 @@ import javafx.stage.Stage;
 import java.util.HashMap;
 import java.util.Map;
 
-public class HelloApplication extends Application {
+public class GestorApp extends Application {
     private final int TOTAL_MEMORY = 1024; // 1GB
     private Map<String, Integer> processes = new HashMap<>();
     private HBox memoryContainer = new HBox(2);

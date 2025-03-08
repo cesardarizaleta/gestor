@@ -15,4 +15,6 @@ module com.cesardarizaleta.gestor {
 
     opens com.cesardarizaleta.gestor to javafx.fxml;
     exports com.cesardarizaleta.gestor;
+    exports com.cesardarizaleta.gestor.advanced;
+    opens com.cesardarizaleta.gestor.advanced to javafx.fxml;
 }
