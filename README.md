@@ -89,6 +89,7 @@ Las contribuciones son bienvenidas. Si deseas mejorar el proyecto, sigue estos p
 4. Haz push a la rama (`git push origin feature/nueva-funcionalidad`).
 5. Abre un Pull Request.
 
+```
 gestor-memoria/
 ├── src/
 │   └── com/
@@ -102,4 +103,5 @@ gestor-memoria/
 └── screenshots/ (opcional)
     ├── main_interface.png
     └── compaction.png
+```
 
