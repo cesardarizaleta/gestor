@@ -1,3 +1,4 @@
+
 # Gestor de Memoria con Técnicas Avanzadas
 
 Este proyecto es un simulador de gestión de memoria que implementa técnicas avanzadas como **compactación**, **reubicación** y **swapping**. Está desarrollado en Java utilizando JavaFX para la interfaz gráfica.
@@ -22,72 +23,83 @@ Este proyecto es un simulador de gestión de memoria que implementa técnicas av
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/tu-usuario/gestor-memoria.git
-Abre el proyecto en tu IDE.
-
-Configura el módulo de JavaFX en tu IDE.
-
-Ejecuta la clase HelloApplication.
+   ```
+2. Abre el proyecto en tu IDE.
+3. Configura el módulo de JavaFX en tu IDE.
+4. Ejecuta la clase `HelloApplication`.
 
 ## Uso
-Interfaz Principal
-Memoria Principal: Muestra los bloques de memoria asignados y libres.
 
-Área de Swapping: Muestra los procesos que han sido movidos al disco.
+### Interfaz Principal
 
-Tabla de Procesos: Lista todos los procesos activos en memoria.
+- **Memoria Principal:** Muestra los bloques de memoria asignados y libres.
+- **Área de Swapping:** Muestra los procesos que han sido movidos al disco.
+- **Tabla de Procesos:** Lista todos los procesos activos en memoria.
+- **Gráfico de Memoria:** Muestra la distribución de memoria en un gráfico de barras.
 
-Gráfico de Memoria: Muestra la distribución de memoria en un gráfico de barras.
+### Funcionalidades
 
-## Funcionalidades
-Agregar Proceso:
+1. **Agregar Proceso:**
+   - Ingresa el nombre y tamaño del proceso.
+   - Haz clic en "Agregar Proceso".
 
-Ingresa el nombre y tamaño del proceso.
+2. **Liberar Proceso:**
+   - Ingresa el nombre del proceso.
+   - Haz clic en "Liberar Proceso".
 
-Haz clic en "Agregar Proceso".
+3. **Compactación:**
+   - Haz clic en "Compactación" para agrupar la memoria libre.
 
-Liberar Proceso:
+4. **Reubicación:**
+   - Haz clic en "Reubicación" para optimizar el espacio de memoria.
 
-Ingresa el nombre del proceso.
+5. **Swapping:**
+   - Selecciona un proceso en la tabla.
+   - Haz clic en "Swapping" para moverlo al área de disco.
 
-Haz clic en "Liberar Proceso".
+## Estructura del Proyecto
 
-### Compactación:
+- `HelloApplication.java`: Clase principal que inicia la aplicación.
+- `MemoryBlock.java`: Representa un bloque de memoria.
+- `ProcessInfo.java`: Almacena información sobre los procesos.
 
-Haz clic en "Compactación" para agrupar la memoria libre.
+## Ejemplos de Uso
 
-### Reubicación:
+### Agregar un Proceso
+1. Ingresa "Proceso1" en el campo "Nombre Proceso".
+2. Ingresa "256" en el campo "Tamaño (MB)".
+3. Haz clic en "Agregar Proceso".
 
-Haz clic en "Reubicación" para optimizar el espacio de memoria.
+### Compactar Memoria
+1. Haz clic en "Compactación".
+2. Observa cómo los bloques libres se agrupan al final de la memoria.
 
-### Swapping:
+### Swapping
+1. Selecciona "Proceso1" en la tabla.
+2. Haz clic en "Swapping".
+3. Observa cómo el proceso se mueve al área de swapping.
 
-Selecciona un proceso en la tabla.
+## Contribuciones
 
-Haz clic en "Swapping" para moverlo al área de disco.
+Las contribuciones son bienvenidas. Si deseas mejorar el proyecto, sigue estos pasos:
 
-Estructura del Proyecto
-HelloApplication.java: Clase principal que inicia la aplicación.
+1. Haz un fork del repositorio.
+2. Crea una rama para tu feature (`git checkout -b feature/nueva-funcionalidad`).
+3. Haz commit de tus cambios (`git commit -m 'Añade nueva funcionalidad'`).
+4. Haz push a la rama (`git push origin feature/nueva-funcionalidad`).
+5. Abre un Pull Request.
 
-MemoryBlock.java: Representa un bloque de memoria.
+gestor-memoria/
+├── src/
+│   └── com/
+│       └── cesardarizaleta/
+│           └── gestor/
+│               ├── HelloApplication.java
+│               ├── MemoryBlock.java
+│               └── ProcessInfo.java
+├── README.md
+├── LICENSE
+└── screenshots/ (opcional)
+    ├── main_interface.png
+    └── compaction.png
 
-ProcessInfo.java: Almacena información sobre los procesos.
-
-Ejemplos de Uso
-Agregar un Proceso
-Ingresa "Proceso1" en el campo "Nombre Proceso".
-
-Ingresa "256" en el campo "Tamaño (MB)".
-
-Haz clic en "Agregar Proceso".
-
-Compactar Memoria
-Haz clic en "Compactación".
-
-Observa cómo los bloques libres se agrupan al final de la memoria.
-
-Swapping
-Selecciona "Proceso1" en la tabla.
-
-Haz clic en "Swapping".
-
-Observa cómo el proceso se mueve al área de swapping.
